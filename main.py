@@ -13,7 +13,7 @@ app = FastAPI()
 def hello():
     return {"Hello" : "Friend"}
 
-@app.get('/pull_scv')
+@app.get('/pull_csv')
 def pull_csv():
     
     bucket_name = os.getenv('BUCKET_NAME')
